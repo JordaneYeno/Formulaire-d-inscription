@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+    <div class="container">
+    
+        <h2>Formulaire d'inscription</h2>
+        <p><i>Complétez le formulaire. </i><em>*</em> sont <em>obligatoires</em></p>
+
+        <form method="get" action="#" >
+            <div class="content">
+                <fieldset>
+                    <legend>Information de l'élève</legend>
+                    <label for="nom">Nom <em>*</em></label>
+                    <input id="nom" placeholder="Entrez un nom" autofocus="" required=""><br>
+                    <label for="prenom">Prenom </label>
+                    <input id="prenom" placeholder="Entrez un prenom" autofocus=""><br>
+                    <label for="sexe">Sexe <em>*</em></label>
+                    <select id="sexe" required>
+                        <option value="" name="sexe">---Sélèctionnez le sexe---</option>
+                        <option value="F" name="sexe">Femme</option>
+                        <option value="A" name="autre">Autre</option>
+                    </select><br>
+                    <label for="lieu">Lieu naiss <em>*</em></label>
+                    <input id="lieu" placeholder="Entrez le lieu" autofocus="" required=""><br>
+                    <label for="ecole">Etablissement <em>*</em></label>
+                    <input id="ecole" placeholder="Entrez un l'etablissemet" autofocus="" required=""><br>
+                    <label for="classe">Classe <em>*</em></label>
+                    <select id="classe" required>
+                        <option value="" name="classe">---Sélèctionnez une classe---</option>
+                        <option value="6" name="classe">6ème</option>
+                        <option value="5" name="classe">5ème</option>
+                        <option value="4" name="classe">4ème</option>
+                        <option value="3" name="classe">3ème</option>
+                        <option value="2" name="classe">2nde</option>
+                        <option value="1" name="classe">1ère</option>
+                        <option value="0" name="classe">Terminale</option>
+                    </select><br>
+                    <label for="domicile">Domicile <em>*</em></label>
+                    <input id="domicile" placeholder="Entrez le domicile" autofocus="" required=""><br>
+                    <label for="telephone">Contact <em>*</em></label>
+                    <input id="telephone" type="tel" placeholder="xxxxxxxx" pattern="[0-9]{9}" required><br>
+                    <label for="email">Email <em>*</em></label>
+                    <input id="email" type="email" placeholder="prenom.nom@polytechnique.edu" required="" pattern=""><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Information de l'établissement</legend>
+                    <label for="annee">Année scolaire <em>*</em></label>
+                    <input id="annee" placeholder="Choisir la date" autofocus="" required="" type="date"><br>
+                    <label for="tuteur">Tuteur <em>*</em></label>
+                    <input id="tuteur" placeholder="Entrez le nom du tuteur" autofocus="" required=""><br>
+                    <label for="telephone-t">Contact tuteur <em>*</em></label>
+                    <input id="telephone-t" type="tel" placeholder="xxxxxxxx" pattern="[0-9]{9}" required><br>
+                    <label for="email">Email <em>*</em></label>
+                    <input id="email" type="email" placeholder="prenom.nom@polytechnique.edu" required="" pattern=""><br>
+                </fieldset>
+            </div>
+        <p><input id="send" type="submit" value="Soummettre"></p>
+        </form>
+
+    </div>
+</body>
+</html>
